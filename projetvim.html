@@ -3,16 +3,19 @@
 
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sheet-cheat de vim</title>
 </head>
 
 <body>
 
     <h2><b>Cheat-Sheet de vim</b></h2>
-
+    
+    <img src="Vimlogo.svg.png" alt="logo de Vim" />
+    
     <p>	Vim est un éditeur de texte, c’est-à-dire un logiciel permettant la manipulation de fichiers texte. Il est directement inspiré de vi (un éditeur très répandu sur les systèmes d’exploitation de type UNIX), dont il est le clone le plus populaire. Son nom signifie d’ailleurs Vi IMproved, que l’on peut traduire par « VI aMélioré ».</p>
-
-    <img src="Vimlogo.svg.png" alt="logo de Vim" />    	
+    	
+    <img src="Vim-console.png" alt="Console de Vim" />
     
     <h2>Mouvement du curseur</h2>
         <ul>
@@ -42,9 +45,42 @@
           <li>O - ajouter (ouvrir) une nouvelle ligne vers le haut</li>
           <li>ea - insérer (ajouter) a la fin d'un mot</li>
           <li>Esc - quiter le mode insertion</li>
-          
+
         </ul>
-      </div>
+          </div>
+
+        <h2>Commandes du mode visuel</h2>
+        <ul>
+          <li>&#62; - décaler le texte vers la droite</li>
+          <li>&#60; - décaler le texte vers la gauche</li>
+          <li>y< - copier le texte marqué</li>
+          <li>d< - supprimer le texte marqué</li>
+          <li>~< - modifier la casse</li>
+        </ul>
+
+        <h2>Quitter</h2>
+        <ul>
+          <li>:w - écrire (sauver) le fichier</li>
+          <li>:w !sudo tee % - write out the current file using sudo</li>
+          <li>:wq< or x or ZZ - écrire (sauver) et quitter</li>
+          <li>:q - quitter (échoue s'il y a des modifications non sauvegardées)</li>
+          <li>:q! or ZQ - quitter et abandonner les modifications non sauvegardées</li>
+        </ul>
+
+        <h2>Rechercher et remplacer</h2>
+        <ul>
+          <li>/pattern - chercher le motif</li>
+          <li>?pattern - chercher en arrière le motif</li>
+          <li>\vpattern - 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)</li>
+          <li>n< - répéter la recherche dans la même direction</li>
+          <li>N - répéter la recherche dans la direction opposée</li>
+          <li>:%s/old/new/g - remplacer toutes les occurrences de ol avec new dans tout le fichier</li>
+          <li>:%s/old/new/gc - remplacer toutes les occurrences de ol avec new dans tout le fichier (demande confirmation)</li>
+          <li>:noh - remove highlighting of search matches</li>
+        </ul>
+
+
+
 
 
 </body>
