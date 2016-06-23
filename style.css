@@ -5,6 +5,14 @@ html
 
 
 }
+img {
+    max-width: 100%;
+    height: auto;
+    border-style:double;
+	border-color:#686868;
+	border-width:5px;
+	position:center;
+}
 h2
 {   
 	color:#686868;
