@@ -5,20 +5,30 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Sheet-cheat de vim</title>
+    
+
   </head>
 
   <body>
-
-    <h2><b>Cheat-Sheet de vim</b></h2>
     
-    <img src="Vimlogo.svg.png" alt="logo de Vim" />
+    
+    <center><h2><b>Cheat-Sheet de vim</b></h2></center>
+    
+    
+   <img src="Vimlogo.svg.png" alt="logo de Vim" />
+
     <!-- def */ -->
-    <p>	Vim est un éditeur de texte, c’est-à-dire un logiciel permettant la manipulation de fichiers texte. Il est directement inspiré de vi (un éditeur très répandu sur les systèmes d’exploitation de type UNIX), dont il est le clone le plus populaire. Son nom signifie d’ailleurs Vi IMproved, que l’on peut traduire par « VI aMélioré ».</p>
-    	
-    <img src="Vim-console.png" alt="Console de Vim" />
+    <br>
+	<p>	Vim est un éditeur de texte, c’est-à-dire un logiciel permettant la manipulation de fichiers texte. Il est directement inspiré de vi (un éditeur très répandu sur les systèmes d’exploitation de type UNIX), dont il est le clone le plus populaire. Son nom signifie d’ailleurs Vi IMproved, que l’on peut traduire par « VI aMélioré ».
+	</p><br><br>
+
+    <center><img src="Vim-console.png" alt="Console de Vim" />
+    </center>
     <!-- part 1  -->
     <h2>Mouvement du curseur</h2> 
+    <br><br>
       <div>
         <ul>
           <li>h - déplacer le curseur vers la gauche</li>
@@ -35,10 +45,10 @@
           <li>^ - aller au premier caractère non-espace de la ligne</li>
           <li>$ - aller à la fin de la ligne</li>
         </ul>
-      </div>
+      </div><br>
      <!--part 2 -->
         <h2>Insérer/ajouter du texte</h2>
-      <div> 
+      <br><br><div> 
         <ul>
           <li>i - insérer avant le curseur</li>
           <li>I - insérer au début de la ligne</li>
@@ -49,10 +59,10 @@
           <li>ea - insérer (ajouter) a la fin d'un mot</li>
           <li>Esc - quiter le mode insertion</li>
         </ul>
-      </div>
+      </div><br>
     <!-- part 3 -->
         <h2>Commandes du mode visuel</h2>
-      <div>	
+      <br><br><div>	
       	<ul>
           <li>&#62; - décaler le texte vers la droite</li>
           <li>&#60; - décaler le texte vers la gauche</li>
@@ -60,20 +70,20 @@
           <li>d< - supprimer le texte marqué</li>
           <li>~< - modifier la casse</li>
         </ul>
-      </div>
+      </div><br>
     <!-- part 4 -->
         <h2>Quitter</h2>
-        <ul>
+        <br><br><ul>
       <div>
           <li>:w - écrire (sauver) le fichier</li>
           <li>:w !sudo tee % - write out the current file using sudo</li>
           <li>:wq< or x or ZZ - écrire (sauver) et quitter</li>
           <li>:q - quitter (échoue s'il y a des modifications non sauvegardées)</li>
           <li>:q! or ZQ - quitter et abandonner les modifications non sauvegardées</li>
-        </ul>
+        </ul><br>
     <!-- part 5 -->
         <h2>Rechercher et remplacer</h2>
-      <div>
+      <br><br><div>
         <ul>
           <li>/pattern - chercher le motif</li>
           <li>?pattern - chercher en arrière le motif</li>
@@ -84,8 +94,9 @@
           <li>:%s/old/new/gc - remplacer toutes les occurrences de ol avec new dans tout le fichier (demande confirmation)</li>
           <li>:noh - remove highlighting of search matches</li>
         </ul>
-      <div>
-
+      <div><br><br>
+    
+    <center><h2><b>by Nabil©</b></h2></center>
   </body>
 
 </html>
